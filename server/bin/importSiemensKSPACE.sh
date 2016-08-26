@@ -50,7 +50,7 @@ else
 
     # make sure mount directory exists on FIONA
     dirloc=/mnt/host_usb3 
-    if [[ ! -d "$dirlock" ]]; then
+    if [[ ! -d "$dirloc" ]]; then
       mkdir -p -m 0777 "$dirloc"
     fi
     
