@@ -72,7 +72,7 @@ fi
 #
 # now go through all the files on the external drive
 #
-find /mnt/host_usb3/ -type f -name *.dat -print0 | while read -d $'\0' file
+find /mnt/host_usb3/incoming -type f -name "*.dat" -print0 | while read -d $'\0' file
 do
   # pattern is : ABCD_kspace_MID00185_20160830_015337.dat
   bn=`basename "$file"`
